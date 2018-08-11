@@ -4,6 +4,10 @@
         <article>
             {{blog.content}}
         </article>
+        <p>Author:{{blog.author}}</p>
+        <ul>
+            <li v-for="category in blog.categories" :key="category">{{category}}</li>
+        </ul>
     </div>
 </template>
 
